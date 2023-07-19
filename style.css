@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700&family=Bodoni+Moda:wght@400;900&family=Bree+Serif&family=Poppins:wght@400;700&family=Roboto&family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-c{
+    height: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.music{
+    background: url(img/bg1.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+ul li {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    list-style: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+ul{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.brand img{
+    width: 100px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    padding: 0 20px;
+    font-size: 1.3rem;
+}
+
+/* navbar complted */
+
+.bottom{
+    /* position: sticky; */
+    height: 90px;
+    /* bottom: 0; */
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    background-color: black;
+    
+
+}
+
+.container{
+   max-height: 75vh;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+
+}
+
+.song-list h1{
+    font-size: 1.6rem;
+    padding-block: 10px;
+}
+
+
+.icons i{
+    cursor: pointer;
+}
+
+.icons{
+    margin-top: 10px;
+}
+
+#progressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+/* container css */
+
+.song-item{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0 25px;
+
+}
+
+.list-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-play i{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.song-item img{
+   width: 43px;
+   border-radius: 30px;
+}
+
+.song-info{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.song-info img{
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+
+
+@media  only screen and (max-width:1300px) {
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+
+    }
+    
+    
+}
+
+
+@media only screen and (max-width:614px) {
+
+
+    .song-list h1{
+        font-size:1.2rem;
+        text-align: center;
+    }
+    
+    .container{
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .song-item{
+        width: 100%;
+    }
+
+    .song-info{
+        font-size: 16px;
+        left: 20px;
+        top: 545px;
+    }
+
+    .songname{
+        margin-inline: 5px;
+    }
+
+
+    .h-nav{
+        height: 30px;
+        margin-bottom: 40px;
+    }
+
+    .v-nav{
+        opacity: 0;
+    }
+    
+ 
+
+
+}
+
+@media only screen and (max-width:310px) {
+    
+    .song-info{
+        display: none;
+    }
+    
+}
+
